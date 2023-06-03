@@ -72,7 +72,8 @@ const Login: React.FC = () => {
             const res = await axios({
                 method: 'POST',
                 url: 'https://myway-shop-app-api.onrender.com/myway/api/users/login',
-                data: objAccount
+                data: objAccount,
+                withCredentials: true
             })
             console.log(res)
 
