@@ -34,6 +34,7 @@ export default function PaginatedItems({ itemsPerPage, apiString }: { itemsPerPa
     const searchParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
     const [prods, setProds] = useState<PRODUCT[]>([])
     console.log(prods)
+    console.log(apiString)
     const [itemOffset, setItemOffset] = useState(parseInt(searchParams.get("startItem") ?? "0", 10));
     
     const endOffset = itemOffset + itemsPerPage;
