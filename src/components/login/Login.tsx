@@ -30,7 +30,7 @@ const BtnGoogle: React.FC = (props) => {
             console.log(res)
             const resPost = await axios({
                 method: 'POST',
-                url: '/myway/api/users/signup/googleAccount',
+                url: 'https://myway-shop-app-api.onrender.com/myway/api/users/signup/googleAccount',
                 data: {
                     googleId: res.data.sub,
                     name: res.data.name,
@@ -71,7 +71,7 @@ const Login: React.FC = () => {
         try {
             const res = await axios({
                 method: 'POST',
-                url: '/myway/api/users/login',
+                url: 'https://myway-shop-app-api.onrender.com/myway/api/users/login',
                 data: objAccount
             })
 
