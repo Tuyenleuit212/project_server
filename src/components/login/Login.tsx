@@ -71,13 +71,8 @@ const Login: React.FC = () => {
         try {
             const res = await axios({
                 method: 'POST',
-                url: '/myway/api/users/login',
-                data: objAccount,
-                headers: {
-                    "accept ": "application/json",
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Credentials": true
-                }
+                url: 'https://myway-shop-app-api.onrender.com/myway/api/users/login',
+                data: objAccount
             })
             console.log(res)
 
