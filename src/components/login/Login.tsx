@@ -72,7 +72,10 @@ const Login: React.FC = () => {
             const res = await axios({
                 method: 'POST',
                 url: '/myway/api/users/login',
-                data: objAccount
+                data: objAccount,
+                headers: {
+                    "accept ": "application/json"
+                }
             })
             console.log(res)
 
