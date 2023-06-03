@@ -74,7 +74,9 @@ const Login: React.FC = () => {
                 url: '/myway/api/users/login',
                 data: objAccount,
                 headers: {
-                    "accept ": "application/json"
+                    "accept ": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Credentials": true
                 }
             })
             console.log(res)
