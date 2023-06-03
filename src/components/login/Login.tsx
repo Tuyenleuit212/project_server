@@ -69,12 +69,13 @@ const Login: React.FC = () => {
     })
     const handleLoginNormal = async (objAccount: Account) => {
         try {
-            const res = await axios({
+            const config: AxiosRequestConfig = {
                 method: 'POST',
                 url: 'https://myway-shop-app-api.onrender.com/myway/api/users/login',
                 data: objAccount,
                 withCredentials: true
-            })
+            };
+            const res = await axios(config)
             console.log(res)
 
             if (res.data.status === 'success') {
