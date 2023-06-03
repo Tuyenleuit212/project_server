@@ -2,7 +2,10 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://myway-shop-app-api.onrender.com",
+   "proxy": "https://myway-shop-app-api.onrender.com",
+  "engines": {
+    "node": ">=14 <15"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.6.1",
