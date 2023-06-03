@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import axios from "axios"
+import axios , { AxiosRequestConfig }  from "axios"
 import React, { useContext, useEffect, useState } from "react"
 import { Link, NavigateFunction, useNavigate } from "react-router-dom"
 import { useGoogleLogin } from '@react-oauth/google';
